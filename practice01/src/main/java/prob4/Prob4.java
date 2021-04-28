@@ -14,9 +14,17 @@ public class Prob4 {
 			result += text.charAt(i);
 			System.out.println(result);
 		}
-		
-		
 		scanner.close();
+		
+		
+//		int length = text.length();
+//		for(int i = 0; i < length; i++) {
+//			for(int j = 0; j <= i; j++) {
+//				System.out.print(text.charAt(j));
+//			}
+//
+//			System.out.println("");
+//		}
 	}
 
 }

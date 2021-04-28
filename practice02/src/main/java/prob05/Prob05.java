@@ -17,10 +17,8 @@ public class Prob05 {
 				int num = scanner.nextInt();
 				if(correctNumber > num) {
 					System.out.println("더 높게");
-					continue;
 				} else if (correctNumber < num) {
 					System.out.println("더 낮게");
-					continue;
 				} else if (correctNumber == num) {
 					System.out.println("맞았습니다.");
 					break;

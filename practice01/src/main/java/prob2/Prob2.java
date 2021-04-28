@@ -8,9 +8,6 @@ public class Prob2 {
 			for (int j = i+1; j < i+11; j++) {
 				sum += " "+j;
 			}
-			if(i == 10) {
-				return;
-			}
 			System.out.println(sum);
 		}
 		

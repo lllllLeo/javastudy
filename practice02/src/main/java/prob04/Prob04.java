@@ -19,6 +19,20 @@ public class Prob04 {
 		}
 		result = rev.toCharArray();
 		return result;
+		
+
+//		swap하면 양쪽이 한번씨 바로 바뀌니까 문자열의 반만 도네
+		
+//		char[] result = str.toCharArray();
+//
+//		int count = result.length / 2;
+//		for(int i = 0; i < count; i++) {
+//			char temp = result[i];
+//			result[i] = result[result.length - 1 - i];
+//			result[result.length - 1 - i] = temp;
+//		}
+//
+//		return result;
 	}
 
 	public static void printCharArray(char[] array){

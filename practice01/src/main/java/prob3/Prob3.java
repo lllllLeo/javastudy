@@ -12,21 +12,28 @@ public class Prob3 {
 		int number = scanner.nextInt();
 		int result = 0;	
 		
-		if(number%2 != 0) { // 홀
-			for (int i = 0; i < number+1; i++) {
-				if(i%2 !=0) {
-					result += i;
-				}
+//		if(number%2 != 0) { // 홀
+//			for (int i = 0; i < number+1; i++) {
+//				if(i%2 !=0) {
+//					result += i;
+//				}
+//			}
+//			System.out.println("결과 값 : " + result);
+//		} else {
+//			for (int i = 0; i < number+1; i++) {
+//				if(i%2 ==0) {
+//					result += i;
+//				}
+//			}			
+//			System.out.println("결과 값 : " + result);
+//		}
+		
+		for (int i = 0; i <= number; i++) {
+			if(number%2 != 0 && i%2 != 0 || number%2 == 0 && i%2 == 0) {
+				result += i;
 			}
-			System.out.println(result);
-		} else {
-			for (int i = 0; i < number+1; i++) {
-				if(i%2 ==0) {
-					result += i;
-				}
-			}			
-			System.out.println("결과 값 :" + result);
 		}
+		System.out.println("결과 값 : " + result);
 		
 		scanner.close();
 	}
