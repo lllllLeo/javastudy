@@ -1,9 +1,17 @@
-package paint;
+package com.douzone.paint.point;
 
-public class Point {
+import com.douzone.paint.i.Drawable;
+
+public class Point implements Drawable{
 	int x;
 	int y;
 	
+
+	
+	public Point(int x, int y) {
+		this.x = x;
+		this.y = y;		
+	}
 	public int getX() {
 		return x;
 	}
@@ -26,5 +34,10 @@ public class Point {
 		} else {
 			
 		}
+	}
+	@Override
+	public void draw() {
+		show();
+		
 	}
 }

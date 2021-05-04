@@ -46,7 +46,14 @@ public class TV {
 		}
 	}
 	public void channel(int channel) {
-		this.channel = channel;
+		if(!power) {
+			return;
+		}
+		if(channel > 255) {
+			this.channel = 1;
+		} else {
+			this.channel = channel;
+		}
 	}
 	public void volume(boolean up) {
 		if(power) {
@@ -68,7 +75,14 @@ public class TV {
 		}
 	}
 	public void volume(int volume) {
-		this.volume = volume;
+		if(!power) {
+			return;
+		}
+		if(volume > 100) {
+			this.volume= 1;
+		} else {
+			this.volume= volume;
+		}
 	}
 	
 	public void status() {

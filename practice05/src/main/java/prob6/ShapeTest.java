@@ -8,7 +8,7 @@ public class ShapeTest {
 	public static void main(String[] args) {
 		List<Shape> list = new ArrayList<Shape>();
 		
-		list.add( new Rectangle(5, 6) );
+		list.add( new Rectangle(5, 6) );	// resize()비율대로 줄여야함
 		list.add( new RectTriangle( 6, 2) );
 		
 		for( Shape shape : list ) {
